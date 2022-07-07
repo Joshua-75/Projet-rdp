@@ -1,19 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <title>{% block title %}Projet - RDP{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet"  href="/css/index_css.css">
+            <link rel="stylesheet"  href="/css/inscription_css.css">
+            <link rel="stylesheet"  href="/css/connexion_css.css">
         {% endblock %}
 
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-    </body>
+        <header>
+            <!-- Sidebar -->
+                <div id="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#"><font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Projet - RDP</font></font>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Basculer la navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarColor01">
+                                    <ul class="navbar-nav me-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Accueil</font>
+                                                </font>
+                                                <span class="visually-hidden">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;"></font>
+                                                </font>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Devis</font></font>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Contact</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </div>
+                         </div>
+                    </nav>
+                </div>
+        </header>
+   
+    <!-- Body page index.html.twig --> 
+     {% block body %}
+     <h1>Joss</h1>
+     {% endblock %}
+
+
+<!-- Pied de page -->
+<footer>
+    <div id="footer">
+        <div class="menus">
+            <ul>
+                <li><a class="menu" href="#">Aide</a></li>
+            </ul>
+    
+            <ul>
+                <li><a class="menu" href="#">A Propos</a></li>
+
+            </ul>
+            <ul>
+                <li><a class="menu" href="#">Communauté</a></li>
+
+            </ul>
+        </div>
+
+        <div class="copyright" >
+            <p><small>©Copyright 2022- By Project_RDP  - Tous droits réservés</small></p>
+            <ul>
+                <li><a href="#">Mentions-légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+ </body>
+</footer>    
 </html>

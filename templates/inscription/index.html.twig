@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InscriptionController!{% endblock %}
+
+{% block body %}
+
+<h1>Page d'inscription</h1>
+
+<div class="security">
+    <div id="login-singin">
+        <div>
+            <a href="#" class="inscription">Inscription</a>
+        </div>        
+        <div>
+            <a href="#" class="connexion">Connexion</a>
+        </div>
+
+    </div>
+    <div class="warning"><i class="fas fa-exclamation" style="margin: 15px;"></i><span style="margin: 10px;"></span></div>
+    <!-- Ajout message -->
+    <div class="success"><i class="fas fa-check-circle" style="margin: 15px;"></i><span style="margin: 10px;"></span></div>
+    <!-- Ajout message -->
+
+
+        <div class="success">
+            <i class="fas fa-check-circle" style="margin: 15px;"></i><span style="margin: 10px;"></span>
+        </div>
+        <div class="warning">
+            <i class="fas fa-exclamation" style="margin: 15px;"></i><span style="margin: 10px;"></span>
+        </div>
+
+    <!-- Début Inscription -->
+        <div id="inscription">
+            <!-- form -->
+            <form method="post">
+
+                    <div class="alert alert-danger"></div>
+                        <div class="form-group">
+                            <label for="inputName">Nom</label>
+                            <input type="name" name="name" id="inputName" class="form-control" autocomplete="name" required autofocus>
+                            <small class="info-input">
+                                <i class="fas fa-info-circle"></i>Veuillez indiquer votre Nom.
+                            </small>
+                         </div>
+                        <div class="form-group">
+                            <label for="inputFirstName">Prénom</label>
+                            <input type="firstname" name="firstname" id="inputFirstName" class="form-control" autocomplete="firstname" required autofocus>
+                            <small class="info-input"> <i class="fas fa-info-circle">
+                                </i>Veuillez indiquer votre Prénom.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                            <small class="info-input"> <i class="fas fa-info-circle">
+                                </i>Veuillez indiquer votre adresse mail.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Mot de passe</label>
+                            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                            <small class="info-input"> <i class="fas fa-info-circle">
+                                </i> Veuillez renseigner votre mot de passe.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Confirmation du Mot de passe</label>
+                            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                            <small class="info-input"> <i class="fas fa-info-circle">
+                                </i> Veuillez renseigner votre mot de passe.
+                            </small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <center>
+                            <button class="btn btn-lg btn-primary" type="submit">
+                                <i class="fas fa-sign-in-alt"></i>Inscription
+                            </button>
+                            </center>
+                        </div>
+                        <div class="form-group">
+                            <center>
+                                <a href="" >Déjà inscrit?</a>
+                                <a href="" id="se_connecter">Se connecter</a>
+                            </center>
+                        </div>            
+            </form>
+            <!-- endform -->
+        </div>
+    <!-- Fin Inscription -->
+   
+   
+</div>
+</div>
+</div>
+
+{% endblock %}
+

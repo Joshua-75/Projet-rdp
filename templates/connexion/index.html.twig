@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ConnexionController!{% endblock %}
+
+{% block body %}
+
+<h1>Page de Connexion</h1>
+
+<div class="security">
+    <div id="login-singin">
+       <div>
+            <a href="#" class="connexion">Connexion</a>
+        </div>
+        <div>
+            <a href="#" class="inscription">Inscription</a>
+        </div>        
+     
+
+    </div>
+    <div class="warning"><i class="fas fa-exclamation" style="margin: 15px;"></i><span style="margin: 10px;"></span></div>
+    <!-- Ajout message -->
+    <div class="success"><i class="fas fa-check-circle" style="margin: 15px;"></i><span style="margin: 10px;"></span></div>
+    <!-- Ajout message -->
+
+
+        <div class="success">
+            <i class="fas fa-check-circle" style="margin: 15px;"></i><span style="margin: 10px;"></span>
+        </div>
+        <div class="warning">
+            <i class="fas fa-exclamation" style="margin: 15px;"></i><span style="margin: 10px;"></span>
+        </div>
+
+    <!-- Début Connexion -->
+        <div id="connexion">
+            <!-- form -->
+            <form method="post">
+
+                    <div class="alert alert-danger"></div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                            <small class="info-input"> <i class="fas fa-info-circle">
+                                </i>Veuillez indiquer votre adresse mail.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Mot de passe</label>
+                            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                            <small class="info-input"> <i class="fas fa-info-circle">
+                                </i> Veuillez renseigner votre mot de passe.
+                            </small>
+                        </div>
+
+                        <div>
+                            <center><input type="checkbox" name="_remember_me"> <span>Se souvenir de moi</span></center>
+                        </div>
+                        <div class="form-group">
+                            <center>
+                            <button class="btn btn-lg btn-primary" type="submit">
+                                <i class="fas fa-sign-in-alt"></i>Connexion
+                            </button>
+                            </center>
+                        </div>
+                        <div class="form-group">
+                            <center>
+                                <a href="" >Mot de passe oublié ?</a>
+                            </center>
+                        </div>    
+                        
+                        <div class="form-group">
+                            <center>
+                                <a href="">Vous n'avez pas de compte ?</a>
+                                <a href="" id="sinscrire">S'inscrire</a>
+                            </center>
+                        </div>        
+            </form>
+            <!-- endform -->
+        </div>
+    <!-- Fin Connexion -->
+   
+   
+</div>
+</div>
+</div>
+
+{% endblock %}
+
