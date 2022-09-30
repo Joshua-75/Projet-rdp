@@ -1,0 +1,66 @@
+.info_legales div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #eb6864;
+    border-radius: 15px;
+    color: #eb6864;
+    margin-top: 20px;
+}
+
+.content_legale{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Ajout 
+p{
+    margin: 0;
+    padding: 10;
+    margin-top: 8px;
+    font-size: 17px;
+}
+*/
+/* Ajout */
+ul > li {
+    margin-left: 100px;/*modif*/
+    margin-top: 8px;
+    font-size: 15px;
+}
+/* Ajout 
+.titre{
+    margin-top: 20px;
+}
+*/
+/**************************/
+/* Ajout */
+/* h5 */
+.titre_ML{
+    margin-top:20px;
+}
+/* h6 */
+
+.sous_titre_ML{
+    margin-top:18px;
+}
+
+/* Texte dans le h5 */ 
+.text_ML{
+    margin: 0;
+    margin-left:12px;
+    padding : 10px;
+    padding-left:12px;
+    font-size:17px;
+}
+/* Texte dans le h6 */ 
+.text_soustitreML{
+    margin: 0;
+    margin-left:24px;
+    padding :0px;
+    padding-left:8px;
+    font-size:16px;   
+}
+
+.text_annexe_ML{
+    padding:0;
+}

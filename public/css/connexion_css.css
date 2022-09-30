@@ -1,0 +1,41 @@
+#connexion{
+    min-width: 600px;
+    max-width: 686px;
+    /*width: auto;
+    height: auto;*/
+    margin: auto;
+    border: 2px solid #FFC824;
+    background: rgb(239, 240, 240);
+    padding-bottom: 20px;/*A voir*/
+    /*Ajout*/
+    /*margin-top: -100px;*/
+}
+.form-group{
+    width: 25em;
+    margin-bottom: 1rem;
+    margin-left: 9em;
+}
+/* Titre h1 */
+.titre{
+    text-align: center;
+    color: whitesmoke;
+}
+/* Fin Titre h1 */
+#sinscrire{
+    color:#FFC824;
+    font-size:bold;
+    size: 20px;
+}
+
+.bouton{
+    border-color: yellow;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFC824;
+    border-radius: 10px;
+    height: 3em;
+    width: 11em;
+    margin-left: 1em;
+    margin-top: 20px; /* Ajout */
+}
+

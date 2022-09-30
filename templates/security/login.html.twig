@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ConnexionController!
+{% endblock %}
+
+{% block body %}
+	{{ parent() }}
+	<h1 class="titre">Page de Connexion</h1>
+	<div class="container">
+		<div class="row">
+			<div class="security">
+				<form method="post">
+					{% if error %}
+						<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+					{% endif %}
+					<div class="warning">
+						<i class="fas fa-exclamation" style="margin: 15px;"></i>
+						<span style="margin: 10px;"></span>
+					</div>
+					<!-- Ajout message -->
+					<div class="success">
+						<i class="fas fa-check-circle" style="margin: 15px;"></i>
+						<span style="margin: 10px;"></span>
+					</div>
+					<!-- Ajout message -->
+
+
+					<div class="success">
+						<i class="fas fa-check-circle" style="margin: 15px;"></i>
+						<span style="margin: 10px;"></span>
+					</div>
+					<div class="warning">
+						<i class="fas fa-exclamation" style="margin: 15px;"></i>
+						<span style="margin: 10px;"></span>
+					</div>
+
+					<!-- Début Connexion -->
+					<div
+						id="connexion">
+						<!-- form -->
+						<form method="post">
+
+							<div class="alert alert-danger"></div>
+							<div class="form-group">
+								<label for="inputEmail">Email</label>
+								<input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+								<small class="info-input">
+									<i class="fas fa-info-circle"></i>Veuillez indiquer votre adresse mail.
+								</small>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword">Mot de passe</label>
+								<input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+								<small class="info-input">
+									<i class="fas fa-info-circle"></i>
+									Veuillez renseigner votre mot de passe.
+								</small>
+							</div>
+
+							<div>
+								<center><input type="checkbox" name="_remember_me">
+									<span>Se souvenir de moi</span>
+								</center>
+							</div>
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+							<div class="form-group">
+								<center>
+									<button class="bouton" type="submit">
+										<i class="fas fa-sign-in-alt"></i>Connexion
+									</button>
+								</center>
+							</div>
+							<div class="form-group">
+								<center>
+									<a href="#">Mot de passe oublié ?</a>
+								</center>
+							</div>
+
+							<div class="form-group">
+								<center>
+									<a href="#">Vous n'avez pas de compte ?</a>
+									<a href="/register" id="sinscrire">S'inscrire</a>
+								</center>
+							</div>
+						</form>
+						<!-- endform -->
+					</div>
+					<!-- Fin Connexion -->
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,112 @@
+/*****************************/
+.security{
+    min-width: 600px;
+    max-width: 686px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    border: 2px solid #3E3E3E;
+    background: rgb(239, 240, 240);
+    padding-bottom: 20px;/*A voir*/
+}
+/******************************/
+textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+  }
+
+.div-margin{
+    margin: 20px;
+}
+/******************************/
+/*******************/
+.titre_n1 {
+    border-bottom: 2px solid grey;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/********************************/
+/** Dans les formulaire contact, login, singin 
+ */
+ .champObligatoire{
+    margin-top: 20px;
+    margin-left: 30px;
+    color:  red;
+}
+/********************************/
+
+.form-group{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group a {
+    font-size: 14px;
+    font-style:italic;
+}
+.form-group label {
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/*******************************/
+/**Button*/
+.btn{
+    width: 220px;
+    height: 70px;
+    size: 15px;/*ajout*/
+    background-color: #FFC824;
+    color: white;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top:  20px;
+    cursor: pointer;
+    border: 2px solid #FFC824;
+}
+.btn:hover{
+    background: rgb(239, 240, 240);
+    /*text-decoration: none;*/
+    color: #FFC824;
+    border: 2px solid #FFC824;
+}
+
+/********************************************/
+.warning{
+    font-size: 1.5em;
+    font-style: bold;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 20px;
+    background: rgb(218, 204, 204);
+}
+.success{
+    font-size: 1.5em;
+    font-style: bold;
+    color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 20px;
+    background: rgb(185, 216, 184);
+}

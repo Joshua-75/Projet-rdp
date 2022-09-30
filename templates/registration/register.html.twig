@@ -1,0 +1,141 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register
+{% endblock %}
+
+{# {% block body %}
+	{{ parent() }}
+	{% for flash_error in app.flashes('verify_email_error') %}
+		<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+	{% endfor %} #}
+{# <div class="container">
+		<div class="row">
+			<div class="col-4">
+				<h1>Inscription</h1>
+
+				{{ form_start(registrationForm) }}
+				{{ form_row(registrationForm.email) }}
+				{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+				{{ form_row(registrationForm.agreeTerms) }}
+				{{ form_row(registrationForm.nom) }}
+				{{ form_row(registrationForm.prenom) }}
+				{{ form_row(registrationForm.numeroImmatriculation) }}
+				{{ form_row(registrationForm.adresse) }}
+				{{ form_row(registrationForm.localisation) }}
+				{{ form_row(registrationForm.numeroDeTelephone) }}
+				<button type="submit" class="btn btn-success">Register</button>
+				{{ form_end(registrationForm) }}
+			</div>
+		</div>
+	</div> #}
+{# {% endblock %} #}
+	{% block body %}
+	{{ parent() }}
+		<h1 class="titre"> Page d'inscription</h1>
+	<div class="container">
+		<div class="row">
+			<div class="security">
+				<div class="warning">
+					<i class="fas fa-exclamation" style="margin: 15px;"></i>
+					<span style="margin: 10px;"></span>
+				</div>
+				<!-- Ajout message -->
+				<div class="success">
+					<i class="fas fa-check-circle" style="margin: 15px;"></i>
+					<span style="margin: 10px;"></span>
+				</div>
+				<!-- Ajout message -->
+
+
+				<div class="success">
+					<i class="fas fa-check-circle" style="margin: 15px;"></i>
+					<span style="margin: 10px;"></span>
+				</div>
+				<div class="warning">
+					<i class="fas fa-exclamation" style="margin: 15px;"></i>
+					<span style="margin: 10px;"></span>
+				</div>
+
+				<!-- Début Inscription -->
+				<div
+					id="inscription">
+					<!-- form -->
+					{{ form_start(registrationForm) }}
+
+					<div class="alert alert-danger"></div>
+					<div class="form-group">
+						{# <label for="inputName">Nom</label> #}
+						{# <input type="name" name="name" id="inputName" class="form-control" autocomplete="name" required autofocus> #}
+						{{ form_row(registrationForm.nom) }}
+							<small class="info-input"> <i class="fas fa-info-circle"></i>Veuillez indiquer votre Nom.
+						</small>
+					</div>
+					<div class="form-group">
+						{# <label for="inputFirstName">Prénom</label> #}
+						{# <input type="firstname" name="firstname" id="inputFirstName" class="form-control" autocomplete="firstname" required autofocus> #}
+						{{ form_row(registrationForm.prenom) }}
+							<small class="info-input"> <i class="fas fa-info-circle"></i>Veuillez indiquer votre Prénom.
+						</small>
+					</div>
+					<div class="form-group">
+						{# <label for="inputEmail">Email</label> #}
+						{# <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus> #}
+						{{ form_row(registrationForm.email) }}
+							<small class="info-input"> <i class="fas fa-info-circle"></i>Veuillez indiquer votre adresse mail.
+						</small>
+					</div>
+					<div
+						class="form-group">
+						{{ form_row(registrationForm.plainPassword, {
+            label: 'Mot de passe'
+        }) }}
+						<small class="info-input">
+							<i class="fas fa-info-circle"></i>
+							Veuillez renseigner votre mot de passe.
+						</small>
+						
+					</div>
+					<div class="form-group">
+						{# <label for="inputEmail">Numéro d'immatriculation</label> #}
+						{# <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus> #}
+						{{ form_row(registrationForm.numeroImmatriculation) }}
+							<small class="info-input"> <i class="fas fa-info-circle"></i>Veuillez indiquer votre numéro d'immatriculation.
+						</small>
+					</div>
+					<div class="form-group">
+						{# <label for="inputEmail">Adresse/label> #}
+						{# <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus> #}
+						{{ form_row(registrationForm.adresse) }}
+							<small class="info-input"> <i class="fas fa-info-circle"></i>Veuillez indiquer votre adresse.
+						</small>
+					</div>
+					<div class="form-group">
+						{# <label for="inputEmail">Numéro de téléphone </label> #}
+						{# <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus> #}
+						{{ form_row(registrationForm.numeroDeTelephone) }}
+							<small class="info-input"> <i class="fas fa-info-circle"></i>Veuillez numéro de téléphone.
+						</small>
+					</div>
+				</div>
+				<div class="form-group mt-4">
+					{# <label for="inputEmail">Numéro de téléphone </label> #}
+					{# <input type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus> #}
+						<button type="submit" class="btn btn-success"> Inscrivez vous</button>
+				</div>
+				{{ form_end(registrationForm) }}
+				<div class="form-group">
+					<center>
+						<a href="#">Déjà inscrit?</a>
+						<a href="/login" id="se_connecter">Se connecter</a>
+					</center>
+				</div>
+				<!-- endform -->
+			</div>
+			<!-- Fin Inscription -->
+
+
+		</div>
+	</div>
+</div>{% endblock %}

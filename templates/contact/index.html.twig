@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Projet RDP | Nous contacter {% endblock %}
+
+{% block body %}
+<div class="security">
+<div id="contact">
+<div class="div-margin">
+{% for message in app.flashes('success') %}
+        <div class="success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <h1 class="titre_n1">Envoyez-nous un message</h1>
+    <p>Nous reviendrons vers vous dans les plus brefs délais !</p>
+    <div class="champObligatoire"><p>(*) champs obligatoires</p></div>
+    {{ form_start(form) }}
+</div>
+
+    {#{% if app.user %}#}
+        {#{% if app.user.numSiret!="" %}
+            <div class="form-group">
+                {{ form_row(form.societe, {'label': 'Client', 'attr' : {'value' : app.user.usernames, 'disabled': 'disabled'}}) }} 
+            </div>   
+            #}      
+        {#{% else %}#}
+            {#
+            <div class="form-group">
+                {{ form_row(form.societe, {'label': 'Société', 'attr' : {'value' : app.user.usernames, 'disabled': 'disabled'}}) }} 
+            </div>  
+            #}      
+        {#{% endif %}#}
+    {#
+    <div class="form-group">
+        {{ form_row(form.email, {'label': 'Email', 'attr' : {'value' : app.user.email, 'disabled': 'disabled'}}) }}
+    </div>
+    #}
+    {#{% else %}#}
+        <div class="form-group">
+        {{ form_row(form.societe, {'label': 'Nom*', 'attr' : {'placeholder' : 'Société', 'requiered': 'requiered'}}) }} 
+    </div> 
+    <div class="form-group">
+        {{ form_row(form.email, {'label': 'Email*', 'attr' : {'placeholder' : 'Email', 'requiered': 'requiered'}}) }}
+    </div>    
+    {#{% endif %}#}     
+    <div class="form-group">
+        {{ form_row(form.telephone, {'label': 'Téléphone', 'attr' : {'placeholder' : 'Téléphone'}}) }}    
+    </div>    
+   
+    <div class="form-group">
+        {{ form_row(form.objet, {'label': 'Objet*', 'attr' : {'placeholder' : 'Objet', 'requiered': 'requiered'}}) }}
+    </div>     
+    <div class="form-group">
+        {{ form_row(form.message, {'label': 'Message*', 'attr' : {'placeholder' : 'Message', 'requiered': 'requiered'}}) }}
+    </div>    
+    <div class="form-group">
+        <button type="submit" class="btn">Envoyer</button>
+    </div>
+    {{ form_end(form) }}
+</div>
+</div>
+
+{% endblock %}

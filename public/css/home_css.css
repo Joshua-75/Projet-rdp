@@ -1,0 +1,21 @@
+.home1{
+    text-align: center;
+    margin-top: 7em;
+    color: aliceblue;
+}
+
+#tel{
+    text-align: center;
+    text-decoration:none;
+    background-color: #FFC824;
+    border-radius: 30px;
+    height: 3em;
+    width: 14em;
+    margin-left: 24em;
+}
+
+.tel{
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 10px
+}

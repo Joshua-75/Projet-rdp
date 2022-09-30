@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/********** Header ************/
+
+#container {
+    background-color: grey;
+    /*AJOUT*/
+    max-width: 1280px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/********** Header ************/
+
+.bg-primary {
+    background-color: #2A2A2A;
+}
+
+
+/********** Barre horizontal ************/
+
+
+/**
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FFC824;
+}
+**/
+
+
+/********** Barre Horizontal ************/
+
+
+/**
+nav {
+    border-bottom: 1px solid black;
+    background-color:grey;
+    text-decoration:none;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 10px;
+ 
+}
+
+.nav a {
+  text-decoration:none;
+  color:white;
+}
+
+.tel{
+  text-decoration:none;
+}
+
+/***************** Body  *********************/
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-image: url('../images/Page_accueil.jpg');
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no_repeat;
+    margin: auto;
+}
+
+
+/******** Fin Body  ************************/
+
+
+/***************** FOOTER *********************/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 9em;
+}
+
+
+/******** Menu ************************/
+
+.menus {
+    background-color: #2A2A2A;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menus li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.menus a {
+    text-decoration: none;
+    color: #FFC824;
+    font-size: 20px;
+}
+
+.menus p {
+    color: white;
+}
+
+
+/******** Copyright ***************/
+
+.copyright {
+    background-color: #242323;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.copyright>p {
+    color: white;
+    text-align: center;
+}
+
+
+/************************************************/
